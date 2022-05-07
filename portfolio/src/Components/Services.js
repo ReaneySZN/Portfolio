@@ -4,8 +4,8 @@ import github from '../Images/github.png';
 
 const Style = styled.div`
    background: #1F2235;
-   height: 100vh;
-   padding: 6rem 0rem;
+   min-height: 100vh;
+   padding: 5rem 0;
    h3, h5, p {
      color: #FFF;
    }
@@ -19,40 +19,44 @@ const Style = styled.div`
      padding: 2rem 4rem;
      margin-top: 1.5rem;
      h5 {
-       padding: 1rem 0;
+       padding: 1rem ;
      }
    }
-   .github-img img {
-     width: 25%;
-     height: 10vh;
-   }
+   .github-img {
+     padding-left: 1rem;
+      img {
+        width: 20%;
+      }
+   } 
+  
 
    @media screen and (max-width: 768px) {
-     height: 85vh;
      br {
      display: none;
    }
    .github-img img {
-     width: 50%;
-     height: 6vh;
+    //  width: 50%;
+   }
+   .columns{
+     text-align: center;
    }
    }
 
    @media screen and (max-width: 375px) {
-     height: 100vh;
-     padding: 2rem 1rem;
+     padding: 3rem;
      
      .github-img img {
-      width: 30%;
-      height: 6vh;
+       width: 12%;
   }
     .columns {
       background: #23263AFA;
       border-radius: 10px;
       text-align: center;
-      padding: 0;
-      margin-top: 0;
+      padding: 1rem 0;
+      margin-top: 1rem;
    }
+
+  }
    
 `
 
@@ -65,61 +69,73 @@ function Services() {
         <p>Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum standard dummy text.</p>
         <div className='container'>
           <div className='row'>
-            <div className='col lg-4'>
+            <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
                <img src={github} alt=''/>
              </div>
-              <h5>Web Development</h5>
+             <div className='web-para'>
+               <h5>Web Development</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
+             </div>
             </div>
             </div>
-            <div className='col lg-4'>
+            <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
                <img src={github} alt=''/>
              </div>
-              <h5>Web Development</h5>
+             <div className='web-para'>
+               <h5>Web Development</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
+             </div>
+             </div>
             </div>
-            </div>
-            <div className='col lg-4'>
+            <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
                <img src={github} alt=''/>
              </div>
-              <h5>Web Development</h5>
+             <div className='web-para'>
+               <h5>Web Development</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
-            </div>
+             </div>
+             </div>
             </div>
           </div>
           <div className='row'>
-          <div className='col lg-4'>
+          <div className='col-lg-4'>
            <div className='columns'>
              <div className='github-img'>
                <img src={github} alt=''/>
              </div>
-              <h5>Web Development</h5>
+             <div className='web-para'>
+               <h5>Web Development</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
+             </div>
+             </div>
             </div>
-            </div>
-            <div className='col lg-4'>
+            <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
                <img src={github} alt=''/>
              </div>
-              <h5>Web Development</h5>
+             <div className='web-para'>
+               <h5>Web Development</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
+             </div>
+             </div>
             </div>
-            </div>
-            <div className='col lg-4'>
+            <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
                <img src={github} alt=''/>
              </div>
-              <h5>Web Development</h5>
+             <div className='web-para'>
+               <h5>Web Development</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
-            </div>
+             </div>
+             </div>
             </div>
           </div>
         </div>

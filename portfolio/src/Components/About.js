@@ -4,7 +4,7 @@ import admin from '../Images/Admin.png';
 
 const Style = styled.div`
      background-color: #23263AFA;
-     height: 100vh;
+     min-height: 100vh;
      padding: 6rem 0;
      h1, h2, h4, p {
          color: white;
@@ -24,6 +24,7 @@ const Style = styled.div`
          text-align: left;
          h4 {
              color: red;
+             padding-left: 1rem;
          }
      }
      .dummypara {
@@ -33,32 +34,34 @@ const Style = styled.div`
          padding-top: 5rem;
      }
      .admin-img img {
-         width: 60%;
-         height: 55vh;
+         width: 100%;
      }
      .admin-deta {
          padding-top: 5rem; 
      }
      @media screen and (max-width: 768px) {
-         height: 65vh;
-        .admin-img img {
-            width: 100%;
-            height: 35vh;
-          }
-     }
+         .admin-img img {
+             width: 100%; 
+           }
+  }
 
      @media screen and (max-width: 375px) {
-        height: 90vh;
         padding: 3rem 1rem;
 
          .admin-deta {
              padding-top: 0;
          }
+         .admin-img {
+             height: 30vh;
+         }
          .admin-img img {
-             height: 25vh;
+              width: 60%;
          }
          br {
              display: none;
+         }
+         .info h4 {
+            padding-left: 1rem;
          }
      }
 `
@@ -71,7 +74,7 @@ function About() {
         <p className='subline'>Lorem ipsum is simply dummy text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
         <div className='container'>
             <div className='row padd'>
-                <div className='col lg-6'>
+                <div className='col-lg-6'>
                     <div className='admin-img'>
                         <img src={admin} alt=''/>
                     </div>

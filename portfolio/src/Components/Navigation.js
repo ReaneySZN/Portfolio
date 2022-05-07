@@ -3,6 +3,7 @@ import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from '
 import styled from 'styled-components';
 import {BsArrowRight} from 'react-icons/bs'
 import {Link} from 'react-router-dom';
+import logo from '../Images/Emmalogo.png';
 
 
 
@@ -11,6 +12,11 @@ const Style = styled.div`
     background: #1F2235 !important;
     height: 5vh;
     padding: 2.5rem 3rem 2rem 3rem;
+  }
+  .logo {
+    width: 50%;
+    margin-right: 30rem;
+
   }
   .btn-outline-success {
     font-size: 1.1rem;
@@ -61,6 +67,14 @@ const Style = styled.div`
     .bg-light {
       padding: 2rem;
     }
+    // .navbar-brand {
+    //   background-image: url(${logo});
+    //   background-size: cover;
+    //   background-position: center
+    // }
+    .logo {
+      object-fit: contain;
+    }
   }
 `;
 
@@ -72,6 +86,7 @@ function Navigation() {
        <Navbar  bg="light" expand="lg">
   <Container fluid>
     <Navbar.Brand><Link to='/'><h1>EMMAWEB</h1></Link> </Navbar.Brand>
+     {/* <Navbar.Brand><Link to='/'><img src={logo} alt='' className='logo'/></Link> </Navbar.Brand> */}
     <Navbar.Toggle  aria-controls="navbarScroll" />
     <Navbar.Collapse  id="navbarScroll">
       <Nav
@@ -87,9 +102,9 @@ function Navigation() {
         <Nav.Link><Link  to="/Blog">Blog</Link></Nav.Link>
         <Nav.Link><Link  to="/Contact">Contact</Link></Nav.Link>
       </Nav>
-      {/* <Form className="d-flex">
-        <Button variant="outline-success"><Link to='/GetQuote'>Get Quote</Link><BsArrowRight/></Button>
-      </Form> */}
+      <Form className="d-flex">
+        {/* <Button variant="outline-success"><Link to='/GetQuote'>Get Quote</Link><BsArrowRight/></Button> */}
+      </Form>
     </Navbar.Collapse>
   </Container>
 </Navbar>
