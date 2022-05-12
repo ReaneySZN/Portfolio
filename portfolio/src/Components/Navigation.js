@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from '
 import styled from 'styled-components';
 import {BsArrowRight} from 'react-icons/bs'
 import {Link} from 'react-router-dom';
-import logo from '../Images/Emmalogo.png';
+import logo from '../Images/emmaweblogo.png';
 
 
 
@@ -94,13 +94,13 @@ function Navigation() {
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-        <Nav.Link><Link  to="/">Home</Link></Nav.Link>
-        <Nav.Link><Link  to="/Service">Service</Link></Nav.Link>
-        <Nav.Link><Link  to="/About">About</Link></Nav.Link>
-        <Nav.Link><Link  to="/Skills">Skills</Link></Nav.Link>
-        <Nav.Link><Link  to="/Portfolio">Portfolio</Link></Nav.Link>
-        <Nav.Link><Link  to="/Blog">Blog</Link></Nav.Link>
-        <Nav.Link><Link  to="/Contact">Contact</Link></Nav.Link>
+        <Nav.Link><a href="#">Home</a></Nav.Link>
+        <Nav.Link><a href="#Services">Service</a></Nav.Link>
+        <Nav.Link><a href="#About">About</a></Nav.Link>
+        <Nav.Link><a href="#Skills">Skills</a></Nav.Link>
+        <Nav.Link><a href="#Portfolio">Portfolio</a></Nav.Link>
+        <Nav.Link><a href="#Blog">Blog</a></Nav.Link>
+        <Nav.Link><a href="#Contact">Contact</a></Nav.Link>
       </Nav>
       <Form className="d-flex">
         {/* <Button variant="outline-success"><Link to='/GetQuote'>Get Quote</Link><BsArrowRight/></Button> */}

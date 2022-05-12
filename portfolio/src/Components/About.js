@@ -40,6 +40,7 @@ const Style = styled.div`
          padding-top: 5rem; 
      }
      @media screen and (max-width: 768px) {
+         padding: 5rem 10rem;
          .admin-img img {
              width: 100%; 
            }
@@ -69,7 +70,7 @@ const Style = styled.div`
 function About() {
   return (
       <Style>
-    <div>
+    <div id='#About'>
         <h1>About Me</h1>
         <p className='subline'>Lorem ipsum is simply dummy text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
         <div className='container'>

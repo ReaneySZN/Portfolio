@@ -71,6 +71,12 @@ const Style = styled.div`
         
     }
    
+    @media screen and (max-width: 768px) {
+        min-height: 100vh;
+        .footer-div {
+            flex-direction: column
+        }
+    }
     @media screen and (max-width: 375px) {
         padding: 4rem 1rem 0rem 1rem;
         ul {
@@ -91,6 +97,7 @@ const Style = styled.div`
         .hire-div {
             padding: 1rem;
         }
+        
     }
 `;
 

@@ -59,7 +59,7 @@ const Style = styled.div`
 function Skills() {
   return (
       <Style>
-          <div>
+          <div id='Skills'>
         <h1 className='heading'>Skills</h1>
         <div className='container skills'>
             <div className='row'>

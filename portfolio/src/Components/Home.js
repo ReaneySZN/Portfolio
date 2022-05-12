@@ -127,7 +127,7 @@ const Style = styled.div `
 function Home() {
   return (
     <Style>
-    <div>
+    <div id='#'>
     <Navigation/>
     <div className='container'>
         <div className='row'>

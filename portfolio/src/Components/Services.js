@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import github from '../Images/github.png';
+import {BsGithub} from 'react-icons/bs';
+import {FiCodesandbox} from 'react-icons/fi';
+import {FaRegFileVideo} from 'react-icons/fa';
+import {MdPhotoCamera} from 'react-icons/md';
+import {BsApple} from 'react-icons/bs';
+import {SiExpertsexchange} from 'react-icons/si';
 
 const Style = styled.div`
    background: #1F2235;
@@ -31,6 +36,7 @@ const Style = styled.div`
   
 
    @media screen and (max-width: 768px) {
+     padding: 5rem 10rem;
      br {
      display: none;
    }
@@ -43,7 +49,7 @@ const Style = styled.div`
    }
 
    @media screen and (max-width: 375px) {
-     padding: 3rem;
+     padding: 3rem ;
      
      .github-img img {
        width: 12%;
@@ -63,7 +69,7 @@ const Style = styled.div`
 function Services() {
   return (
     <Style>
-    <div className='Serv'>
+    <div id='#Services' className='Serv'>
         <h6>SERVICES</h6>
         <h3>My Service</h3>
         <p>Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum standard dummy text.</p>
@@ -72,7 +78,7 @@ function Services() {
             <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
-               <img src={github} alt=''/>
+               <BsGithub size={30} color={'red'}/>
              </div>
              <div className='web-para'>
                <h5>Web Development</h5>
@@ -83,10 +89,10 @@ function Services() {
             <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
-               <img src={github} alt=''/>
+               <FiCodesandbox size={30} color={'red'}/>
              </div>
              <div className='web-para'>
-               <h5>Web Development</h5>
+               <h5>Web Design</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
              </div>
              </div>
@@ -94,10 +100,10 @@ function Services() {
             <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
-               <img src={github} alt=''/>
+           <FaRegFileVideo size={30} color={'red'}/>
              </div>
              <div className='web-para'>
-               <h5>Web Development</h5>
+               <h5>Video Editing</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
              </div>
              </div>
@@ -107,10 +113,10 @@ function Services() {
           <div className='col-lg-4'>
            <div className='columns'>
              <div className='github-img'>
-               <img src={github} alt=''/>
+             <MdPhotoCamera size={30} color={'red'}/>
              </div>
              <div className='web-para'>
-               <h5>Web Development</h5>
+               <h5>Photography</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
              </div>
              </div>
@@ -118,10 +124,10 @@ function Services() {
             <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
-               <img src={github} alt=''/>
+           <BsApple size={30} color={'red'}/>
              </div>
              <div className='web-para'>
-               <h5>Web Development</h5>
+               <h5>App Development</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
              </div>
              </div>
@@ -129,10 +135,10 @@ function Services() {
             <div className='col-lg-4'>
            <div className='columns'>
            <div className='github-img'>
-               <img src={github} alt=''/>
+           <SiExpertsexchange size={30} color={'red'}/>
              </div>
              <div className='web-para'>
-               <h5>Web Development</h5>
+               <h5>SEO Expert</h5>
               <p>Lorem ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry lorem ipsum standard dummy text.</p>
              </div>
              </div>

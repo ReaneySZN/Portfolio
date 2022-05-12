@@ -12,7 +12,7 @@ import { Card, Button } from 'react-bootstrap'
 
 const Style = styled.div`
     padding: 5rem 0;
-    min-height: 100vh;
+    min-height: 50vh;
     background: #1F2235;
     
     .website {
@@ -99,7 +99,7 @@ const Style = styled.div`
 function Portfolio() {
   return (
     <Style>
-        <div>
+        <div id='Portfolio'>
             <h1 className='port-h'>Portfolio</h1>
             <div className='container ports'>
                 <div className='row carding'>

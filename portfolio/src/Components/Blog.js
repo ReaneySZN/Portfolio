@@ -16,6 +16,7 @@ const Style = styled.div `
         border-radius: 10px;
         border: 1px solid transparent;
         width: 300px !important;
+        overflow: hidden;
     }
     .card-body {
         background-color: #1F2235;
@@ -30,7 +31,7 @@ const Style = styled.div `
     }
     .card-img-top:hover {
       transform: scale(1.1);
-      transition: .5s ease-in-out;
+      transition: .3s ease-in-out;
     }
     .carding {
       margin: 1rem auto;
@@ -59,6 +60,7 @@ const Style = styled.div `
   .carding {
     display: flex;
     justify-content: center;
+    margin: 0 15rem;
   }
   .card {
     margin: 1rem;
@@ -70,13 +72,16 @@ const Style = styled.div `
     width: 300px !important;
     margin-left: 1.5rem;
   }
+  .carding {
+    margin: 1rem auto;
+  }
 }
 `
 
 function Blog() {
   return (
     <Style>
-      <div>
+      <div id='#Blog'>
       <h1 className='port-h'>Blog</h1>
         <div className='container'>
           <div className='row carding'>
