@@ -1,18 +1,12 @@
 import './App.css';
 import {Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './Components/Home';
-
+import Dashboard from './Components/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-      <Route path={"/"}>
-        <Home/>
-      </Route>
-    
-     </Switch>
+        <Dashboard/>
     </div>
   );
 }
