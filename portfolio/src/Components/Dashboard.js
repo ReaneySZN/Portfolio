@@ -109,8 +109,6 @@ const Style = styled.div`
     .main-page {
         background: #dee2e6;
         border-radius: 10px;
-        border-top-right-radius: 0px !important;
-        border-bottom-right-radius: 0px !important;
         padding: 0 2rem;
     }
     .overview-sales {
@@ -228,10 +226,6 @@ const Style = styled.div`
     .side-page {
         background: #dee2e6;
         border-radius: 10px;
-        border-top-left-radius: 0px !important;
-        border-bottom-left-radius: 0px !important;
-        border-top-right-radius: 10px !important;
-        border-bottom-left-radius: 0px !important;
         padding: 1rem 2rem;
         
         .admin-pro {
@@ -394,7 +388,6 @@ const Style = styled.div`
         }
         .pie-chart {
             width: 40%;
-            margin-bottom: 0 !important;
         } 
         .chart-img img {
             height: 15vh;
@@ -403,23 +396,16 @@ const Style = styled.div`
             height: 22vh;
         }
         .side-page .liquid-img img {
-            width: 50%;
+            width: 50% !important;
             margin: 0 auto;
         }
         .side-page .liquid-img .con-word {
             top: 21rem;
-            width: 50%;
+            width: 50% !important;
             margin: 0 auto;
         }
-        .side-page {
-            border-top-left-radius: 0px !important;
-            border-bottom-left-radius: 10px !important;
-            border-top-right-radius: 0px !important;
-        }
-        .main-page {
-            border-top-right-radius: 10px ;
-            border-bottom-left-radius: 0px ;
-        }
+        
+        
     }
 
     @media screen and (max-width: 375px) {
