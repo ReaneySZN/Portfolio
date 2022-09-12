@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family:'DM Sans', sans-serif ;
+
+}
+a {
+  list-style-type: none !important;
+  text-decoration: none !important;
+}
+button {
+  outline: none;
+  border: none;
+}
+p, .h, h1 , h2, h3, h4, h5, h6 {
+  font-family:'DM Sans', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Nunito:wght@200&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap');
